@@ -1,2 +1,2 @@
 # NullClient
-Just a krunker.io client :D
+[![Total downloads](https://img.shields.io/github/downloads/CrafterlKrunker/NullClient/total)](https://github.com/CrafterlKrunker/NullClient/releases)
