@@ -119,6 +119,7 @@ class windowLoader {
         })
         let contents = splash.webContents
         // https://www.electron.build/auto-update.html
+        /*
         async function autoUpdate(){
             return new Promise((resolve, reject) => {
                 return contents.on('dom-ready', () => {
@@ -154,13 +155,15 @@ class windowLoader {
                 })
             })
         }
+        */
         function launchGame(){
             setTimeout(() => {
                 windowLoader.initWin('https://krunker.io/', config)
                 splash.destroy()
             }, 3000)
         }
-        autoUpdate().finally(() => launchGame())
+        //autoUpdate().finally(() => launchGame())
+        launchGame()
         splash.loadFile('app/html/splash.html')
     }
 }
