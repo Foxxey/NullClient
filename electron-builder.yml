@@ -1,0 +1,33 @@
+appId: com.null.client
+productName: NullClient
+win:
+  icon: "build/icon.ico" 
+  artifactName: ${productName}-portable-${os}-${arch}.${ext}
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+    - target: portable
+      arch:
+        - x64
+        - ia32
+linux:
+  artifactName: ${productName}-portable-${os}-${arch}.${ext}
+  target:
+    - target: appImage
+      arch:
+        - x64
+        - ia32
+  category: game
+nsis:
+  artifactName: ${productName}-setup-${os}-${arch}.${ext}
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+files:
+  - "**/*"
+  - "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}"
+  - "!**/node_modules/.bin"
+  - "!**/{.git,.gitignore}"
+  - "!dev-app-update.yml"
