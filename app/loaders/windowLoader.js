@@ -19,7 +19,7 @@ class windowLoader {
             },
         })
         let contents = win.webContents
-        win.openDevTools()
+        //win.openDevTools()
         win.removeMenu()
         win.once('ready-to-show',() => {
             let location_ = locationTest(contents.getURL())

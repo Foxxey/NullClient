@@ -1,6 +1,6 @@
 {
   "name": "nullclient",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Just a client",
   "main": "app/main.js",
   "author": "CrafterL",

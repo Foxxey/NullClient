@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	//shows Client verison
 	document.getElementById('curGameInfo').id = 'CVersion'
 	document.getElementById('CVersion').style.color = '#ffffff'
-	document.getElementById('CVersion').innerText = 'Null Client v.0.0.1' //need to get version through ipc get-app-info
+	document.getElementById('CVersion').innerText = 'Null Client v.0.0.2' //need to get version through ipc get-app-info
 	//custom css
 	const gameCSS = Object.assign(document.createElement('style'))  //need to fix bug with nasa css
 	gameCSS.id = 'gameCSS'
@@ -85,7 +85,7 @@ function createWatermark() {
 	watermark.style.bottom = '1px'
 	watermark.style.left = '20px'
 	watermark.style.fontSize = '9pt'
-	watermark.innerHTML = 'Null Client v.0.0.1'
+	watermark.innerHTML = 'Null Client v.0.0.2'
 	inGameUI.appendChild(watermark)
 }
 

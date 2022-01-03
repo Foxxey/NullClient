@@ -22,9 +22,9 @@ linux:
   category: game
 nsis:
   artifactName: ${productName}-setup-${os}-${arch}.${ext}
-  oneClick: false
-  perMachine: true
-  allowToChangeInstallationDirectory: true
+  oneClick: true
+  perMachine: false
+  allowToChangeInstallationDirectory: false
 files:
   - "**/*"
   - "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}"
